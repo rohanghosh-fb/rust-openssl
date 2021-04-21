@@ -72,6 +72,7 @@ impl SslConnector {
         {
             use std::fs;
             use std::io::Read;
+            use x509::{X509, X509Ref};
 
             let cert_store = ctx.cert_store_mut();
 
